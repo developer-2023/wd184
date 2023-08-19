@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /*
+            transfer of primitives and objects to functions
+        */
+
+        function foo(num, obj) {
+            num = 12;
+            obj.data = "test!";
+        }
+
+        let a = 10;
+        let data = { data: "text" };
+        foo(a, data);
+        
+        console.log("a", a); // 7
+        console.log("data:", data); // {data: 'test!'}
+    </script>
+</body>
+</html> 
